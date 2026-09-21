@@ -1,0 +1,11 @@
+.{
+    .name = .openreliant_safedisc,
+    .version = "0.0.0",
+    .fingerprint = 0x53d766609a131316,
+    .minimum_zig_version = "0.16.0",
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}

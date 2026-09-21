@@ -1,0 +1,12 @@
+# Zig build products.
+/.zig-cache/
+/zig-out/
+
+# The game's files, never committed: executables, the encrypted payload, anything decrypted.
+*.[eE][xX][eE]
+*.[iI][cC][dD]
+*.[dD][lL][lL]
+*.[sS][yY][sS]
+*.[bB][iI][nN]
+*.[iI][sS][oO]
+.DS_Store
