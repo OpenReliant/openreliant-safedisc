@@ -148,7 +148,7 @@ safedisc imports LANCER.ICD
 ### 4. Call sites are redirected
 
 The slot a call goes through does not name its API. The payload's C runtime (see
-[`runtime.md`](https://github.com/vdmkenny/openreliant/blob/main/docs/binary/runtime.md)) is library code whose calls are fixed by what each of its functions
+[`runtime.md`](https://github.com/OpenReliant/openreliant/blob/main/docs/binary/runtime.md)) is library code whose calls are fixed by what each of its functions
 does, and it reaches different APIs through the same slot:
 
 | Slot | Call site | Caller | API | Arguments |
@@ -218,7 +218,7 @@ safedisc imports <icd>         # recover the API names
 The recovered image should satisfy all of the following:
 
 - 1,151,021 bytes, the same size as the `.icd`: decryption is in place.
-- Entry point `0x004D1210`, the C runtime's `_WinMainCRTStartup` (see [`runtime.md`](https://github.com/vdmkenny/openreliant/blob/main/docs/binary/runtime.md)).
+- Entry point `0x004D1210`, the C runtime's `_WinMainCRTStartup` (see [`runtime.md`](https://github.com/OpenReliant/openreliant/blob/main/docs/binary/runtime.md)).
 - Build paths such as `C:\lancer\surrender\surrenderlib\srAPI.cpp` in `.rdata`.
 - The 33 `TT_*` mission trigger names, and diagnostics including `StarlancerRunning`,
   `FATAL: SR Assertion Failed`, `DPInit: CoCreateInstance DirectPlay` and `dmodes.bin`.
